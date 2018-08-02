@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="../../layout/templateAdmin.xhtml">
+	<ui:define name="content">
+	
+       HomeAdmin
+    <p:galleria value="#{imagesView.images}" var="image" panelWidth="700" panelHeight="400" showCaption="true">
+    <p:graphicImage name="images/#{image}" alt="Image Description for #{image}" title="#{image}" width="700" height="400"/>
+    </p:galleria>
+       
+	</ui:define>
+</ui:composition>
+</html>
